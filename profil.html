@@ -98,6 +98,43 @@
     </div>
   </section>
 
+  <!-- ================= GALLERY ================= -->
+  <section class="section bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h3 class="section-title mb-10">Gallery</h3>
+
+      <div class="relative overflow-hidden rounded-lg shadow-lg aspect-[16/9]">
+
+        <div class="flex transition-transform duration-700 ease-in-out h-full room-slider" data-index="0">
+          <img src="assets/images/gallery/1.jpg"
+              class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+          <img src="assets/images/gallery/2.jpg"
+              class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+          <img src="assets/images/gallery/3.jpg"
+              class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+          <img src="assets/images/gallery/4.jpg"
+              class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+        </div>
+
+        <!-- Prev -->
+        <button onclick="prevRoomSlide(this)"
+          class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full hover:bg-black">
+          ‹
+        </button>
+
+        <!-- Next -->
+        <button onclick="nextRoomSlide(this)"
+          class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full hover:bg-black">
+          ›
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+
   <!-- ================= CTA ================= -->
   <section class="section text-center bg-green-700 text-white">
     <h3 class="text-3xl font-light mb-6">Discover Your Perfect Getaway</h3>
