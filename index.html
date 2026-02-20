@@ -28,10 +28,10 @@
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-xl font-semibold tracking-wide">Lounusa Beach Resort</h1>
         <nav class="hidden md:flex gap-8 text-sm">
-        <a href="profil.html" class="hover:text-green-700">About Us</a>
-        <a href="kamar.html" class="hover:text-green-700">Rooms</a>
-        <a href="fasilitas.html" class="hover:text-green-700">Facilities</a>
-        <a href="contact.html" class="hover:text-green-700">Contact</a>
+        <a href="profil.html" class="hover:text-blue-900">About Us</a>
+        <a href="kamarLaut.html" class="hover:text-blue-900">Rooms</a>
+        <a href="fasilitas.html" class="hover:text-blue-900">Facilities</a>
+        <a href="contact.html" class="hover:text-blue-900">Contact</a>
         </nav>
     </div>
   </header>
@@ -39,14 +39,14 @@
   <!-- ================= HERO ================= -->
   <section
     class="h-screen bg-cover bg-center flex items-center justify-center text-white"
-    style="background-image: url('assets/images/hero/lounusa-beach-resort.jpg');"
+    style="background-image: url('assets/images/gallery/plang.jpg');"
   >
     <div class="bg-black/50 w-full h-full flex items-center justify-center">
       <div class="text-center px-6">
         <h2 class="text-4xl md:text-6xl font-light tracking-wide mb-6">
           Your Private Escape by the Sea
         </h2>
-        <p class="max-w-xl mx-auto mb-8 text-sm md:text-base">
+        <p class="max-w-xl mx-auto mb-8 text-white text-sm md:text-base">
           Experience tranquility, nature, and comfort above the city.
         </p>
         <div class="flex flex-col md:flex-row gap-4 justify-center">
@@ -57,9 +57,9 @@
             Explore Rooms
           </a>
           <a
-            href="https://wa.me/628XXXXXXXXXX"
+            href="https://wa.me/6285388882379"
             target="_blank"
-            class="px-8 py-3 bg-green-600 hover:bg-green-700 transition"
+            class="px-8 py-3 bg-gray-800 hover:bg-gray-800 transition"
           >
             Chat via WhatsApp
           </a>
@@ -72,7 +72,7 @@
   <section id="about" class="py-20 px-6 max-w-6xl mx-auto">
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <img
-        src="assets/images/about/about.jpg"
+        src="assets/images/about/lb.jpg"
         alt="About Resort"
         class="rounded-lg shadow-md"
       />
@@ -96,41 +96,119 @@
       <div class="grid md:grid-cols-3 gap-8">
 
         <div class="bg-white shadow rounded overflow-hidden">
-          <div class=" relative overflow-hidden w-full aspect-[16/9] overflow-hidden">
-            <img src="assets/images/kamar/silapa/kamar 1.png" alt="Suite Room" class="w-full h-full object-cover object-center">
-          </div>
+            <div class="relative overflow-hidden rounded-lg shadow-lg w-full max-w-[580px] aspect-[16/9]">
+            <div class="flex transition-transform duration-700 ease-in-out h-full room-slider" data-index="0">
+                  <img src="assets/images/kamar/lumba/kamar 1.jpg"
+                      class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+                  <img src="assets/images/kamar/lumba/teras.jpg"
+                      class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+                  <img src="assets/images/kamar/lumba/ruang tamu.jpg"
+                      class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+                  <img src="assets/images/kamar/lumba/balkon1.png"
+                      class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+            </div>
+
+            <button onclick="prevRoomSlide(this)"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full">‹</button>
+
+            <button onclick="nextRoomSlide(this)"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full">›</button>
+            </div>
           <div class="p-6">
-            <h4 class="font-medium mb-2">Suite Room</h4>
-            <p class="text-sm mb-4">Spacious suite for premium comfort.</p>
-            <a href="kamar.html" class="text-green-700 text-sm underline">
-              See more
-            </a>
+            <p class="text-2xl font-medium mb-2">
+              <light>Deluxe Room</light>
+            </p>
+          <ul class="text-sm mb-3 space-y-2">
+            <li>• King Size Beds</li>
+            <li>• Spacious Room</li>
+            <li>• Private Bathroom</li>
+            <li>• Free Wi-Fi</li>
+          </ul>
+
+            <p class="text-sm mb-2">
+                <strong>Tipe Kamar:</strong> Deluxe Room
+            </p>
+            <p class="text-sm mb-6">
+                <strong>Harga:</strong> Rp 330.000 - Rp 440.000 / malam 
+            </p>
           </div>
         </div>
 
         <div class="bg-white shadow rounded overflow-hidden">
-          <div class=" relative overflow-hidden w-full aspect-[16/9] overflow-hidden">
-            <img src="assets/images/kamar/bobarabiru/Bobara biru kamar2.png" alt="Suite Room" class="w-full h-full object-cover object-center">
-          </div>
+            <div class="relative overflow-hidden rounded-lg shadow-lg w-full max-w-[580px] aspect-[16/9]">
+            <div class="flex transition-transform duration-700 ease-in-out h-full room-slider" data-index="0">
+                <img src="assets/images/kamar/singaro/kamar1.jpg"
+                    class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+                <img src="assets/images/kamar/singaro/runagtamu.jpg"
+                    class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+                <img src="assets/images/kamar/singaro/balkon1.jpg"
+                    class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+                <img src="assets/images/kamar/singaro/teras1.jpg"
+                    class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+            </div>
+
+            <button onclick="prevRoomSlide(this)"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full">‹</button>
+
+            <button onclick="nextRoomSlide(this)"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full">›</button>
+            </div>
           <div class="p-6">
-            <h4 class="font-medium mb-2">Suite Room</h4>
-            <p class="text-sm mb-4">Spacious suite for premium comfort.</p>
-            <a href="kamar.html" class="text-green-700 text-sm underline">
-              See more
-            </a>
+            <p class="text-2xl font-medium mb-2">
+              <light>Suite Room</light>
+            </p>
+          <ul class="text-sm mb-3 space-y-2">
+            <li>• King Size Beds</li>
+            <li>• Spacious Room</li>
+            <li>• Private Bathroom</li>
+            <li>• Free Wi-Fi</li>
+          </ul>
+
+            <p class="text-sm mb-2">
+                <strong>Tipe Kamar:</strong> Suite Room
+            </p>
+            <p class="text-sm mb-6">
+                <strong>Harga:</strong> Rp 550.000 / malam 
+            </p>
           </div>
         </div>
 
         <div class="bg-white shadow rounded overflow-hidden">
-          <div class=" relative overflow-hidden w-full aspect-[16/9] overflow-hidden">
-            <img src="assets/images/kamar/Tuna/kamar1.png" alt="Executive Room" class="w-full h-full object-cover object-center">
-          </div>
+            <div class="relative overflow-hidden rounded-lg shadow-lg w-full max-w-[580px] aspect-[16/9]">
+            <div class="flex transition-transform duration-700 ease-in-out h-full room-slider" data-index="0">
+                <img src="assets/images/kamar/Tuna/kamar1.jpg"
+                    class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+                <img src="assets/images/kamar/Tuna/toilet1.jpg"
+                    class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+                <img src="assets/images/kamar/Tuna/balkon1.jpg"
+                    class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+                <img src="assets/images/kamar/Tuna/teras1.jpg"
+                    class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+            </div>
+
+            <button onclick="prevRoomSlide(this)"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full">‹</button>
+
+            <button onclick="nextRoomSlide(this)"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full">›</button>
+            </div>
           <div class="p-6">
-            <h4 class="font-medium mb-2">Executive Room</h4>
-            <p class="text-sm mb-4">Perfect choice for family stay.</p>
-            <a href="kamar.html" class="text-green-700 text-sm underline">
-              See more
-            </a>
+            <p class="text-2xl font-medium mb-2">
+              <light>Executive Room</light>
+            </p>
+          <ul class="text-sm mb-3 space-y-2">
+            <li>• Two Double Beds</li>
+            <li>• Spacious Room</li>
+            <li>• Private Bathroom</li>
+            <li>• Free Wi-Fi</li>
+          </ul>
+
+            <p class="text-sm mb-2">
+                <strong>Tipe Kamar:</strong> Executive Room
+            </p>
+            <p class="text-sm mb-6">
+                <strong>Harga:</strong> Rp 660.000 / malam 
+            </p>
           </div>
         </div>
 

@@ -22,11 +22,11 @@
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-xl font-semibold tracking-wide">Lounusa Beach Resort</h1>
       <nav class="hidden md:flex gap-8 text-sm">
-        <a href="index.html" class="hover:text-green-700">Home</a>
-        <a href="profil.html" class="text-green-700 font-medium">About Us</a>
-        <a href="kamar.html" class="hover:text-green-700">Rooms</a>
-        <a href="fasilitas.html" class="hover:text-green-700">Facilities</a>
-        <a href="contact.html" class="hover:text-green-700">Contact</a>
+        <a href="index.html" class="hover:text-blue-900">Home</a>
+        <a href="profil.html" class="text-gray-800 font-medium">About Us</a>
+        <a href="kamarLaut.html" class="hover:text-blue-900">Rooms</a>
+        <a href="fasilitas.html" class="hover:text-blue-900">Facilities</a>
+        <a href="contact.html" class="hover:text-blue-900">Contact</a>
       </nav>
     </div>
   </header>
@@ -34,14 +34,14 @@
   <!-- ================= HERO ABOUT ================= -->
   <section
     class="h-[70vh] bg-cover bg-center flex items-center justify-center text-white"
-    style="background-image: url('assets/images/hero/hero.jpg');"
+    style="background-image: url('assets/images/about/lb.jpg');"
   >
     <div class="bg-black/50 w-full h-full flex items-center justify-center">
       <div class="text-center px-6">
         <h2 class="text-4xl md:text-5xl font-light tracking-wide mb-4">
           Experience at Lounusa Beach Resort
         </h2>
-        <p class="text-sm md:text-base max-w-xl mx-auto">
+        <p class="text-white md:text-base max-w-xl mx-auto">
           A peaceful escape surrounded by nature and comfort
         </p>
       </div>
@@ -52,7 +52,7 @@
   <section class="section max-w-6xl mx-auto">
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <h3 class="text-3xl font-light mb-6">Our Story</h3>
+        <h3 class="text-4xl font-semibold mb-6">Our Story</h3>
         <p class="mb-4">
           Lounusa Beach Resort was built with a simple vision: to create a peaceful
           retreat where guests can reconnect with nature while enjoying modern comfort.
@@ -63,11 +63,22 @@
           and unforgettable moments.
         </p>
       </div>
-      <img
-        src="assets/images/gallery/1.jpg"
-        alt="Resort View"
-        class="rounded-lg shadow-md"
-      />
+        <div class="relative overflow-hidden rounded-lg shadow-lg w-full max-w-[580px] aspect-[16/9]">
+        <div class="flex transition-transform duration-700 ease-in-out h-full room-slider" data-index="0">
+            <img src="assets/images/about/lb1.jpg"
+                class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+            <img src="assets/images/about/lb2.jpg"
+                class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+              <img src="assets/images/about/lb3.jpg"
+                class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+        </div>
+
+        <button onclick="prevRoomSlide(this)"
+            class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full">‹</button>
+
+        <button onclick="nextRoomSlide(this)"
+            class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full">›</button>
+        </div>
     </div>
   </section>
 
@@ -77,22 +88,22 @@
       <h3 class="text-3xl font-light mb-12">The Experience</h3>
       <div class="grid md:grid-cols-3 gap-8 text-sm">
         <div class="card p-8">
-          <h4 class="font-medium mb-3">Nature & Serenity</h4>
-          <p>
-            .......
-          </p>
+          <h4 class="text-2xl font-semibold mb-3">Nature & Serenity</h4>
+          <h4 class="font-light">
+            Embrace the calm of nature with gentle ocean waves, soft sea breeze, and tropical views that soothe every moment of your stay.
+          </h4>
         </div>
         <div class="card p-8">
-          <h4 class="font-medium mb-3">Comfort & Privacy</h4>
-          <p>
-            .......
-          </p>
+          <h4 class="text-2xl font-semibold mb-3">Comfort & Privacy</h4>
+          <h4 class="font-light">
+            Experience exceptional comfort in thoughtfully designed spaces that offer privacy, relaxation, and a warm coastal ambiance.
+          </h4>
         </div>
         <div class="card p-8">
-          <h4 class="font-medium mb-3">Tranquil Ocean Escape</h4>
-          <p>
-            .......
-          </p>
+          <h4 class="text-2xl font-semibold mb-3">Tranquil Ocean Escape</h4>
+          <h4 class="font-light">
+            Unwind by the shoreline and discover your perfect seaside escape, where golden sunsets and peaceful moments create unforgettable memories.
+          </h4>
         </div>
       </div>
     </div>
@@ -107,13 +118,19 @@
       <div class="relative overflow-hidden rounded-lg shadow-lg aspect-[16/9]">
 
         <div class="flex transition-transform duration-700 ease-in-out h-full room-slider" data-index="0">
-          <img src="assets/images/gallery/1.jpg"
+          <img src="assets/images/gallery/lb.jpg"
               class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
-          <img src="assets/images/gallery/2.jpg"
+          <img src="assets/images/gallery/sore-saat-air-surut.jpg"
               class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
-          <img src="assets/images/gallery/3.jpg"
+          <img src="assets/images/gallery/teras.jpg"
               class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
-          <img src="assets/images/gallery/4.jpg"
+          <img src="assets/images/gallery/ruang makan.jpg"
+              class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+          <img src="assets/images/gallery/jembatan.jpg"
+              class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+          <img src="assets/images/gallery/halaman.jpg"
+              class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
+          <img src="assets/images/gallery/halaman1.jpg"
               class="w-full h-full object-cover flex-shrink-0 object-[50%_55%]" />
         </div>
 
@@ -136,9 +153,9 @@
 
 
   <!-- ================= CTA ================= -->
-  <section class="section text-center bg-green-700 text-white">
+  <section class="section text-center bg-gray-800 text-white">
     <h3 class="text-3xl font-light mb-6">Discover Your Perfect Getaway</h3>
-    <p class="text-sm mb-8">
+    <p class="text-white mb-8">
       Contact us directly for more information and reservations.
     </p>
     <a

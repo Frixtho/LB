@@ -29,10 +29,10 @@ function filterRooms(type) {
   });
 
   // tombol aktif
-  document.getElementById("btn-darat").classList.remove("bg-green-700", "text-white");
-  document.getElementById("btn-laut").classList.remove("bg-green-700", "text-white");
+  document.getElementById("btn-darat").classList.remove("bg-gray-800", "text-white");
+  document.getElementById("btn-laut").classList.remove("bg-gray-800", "text-white");
 
-  document.getElementById(`btn-${type}`).classList.add("bg-green-700", "text-white");
+  document.getElementById(`btn-${type}`).classList.add("bg-gray-800", "text-white");
 }
 
 // default tampil kamar darat
@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll(".room-tab").forEach(tab => {
       // reset semua
-      tab.classList.remove("bg-green-700","text-white","shadow-md","scale-105");
-      tab.classList.add("text-green-700");
+      tab.classList.remove("bg-gray-800","text-white","shadow-md","scale-105");
+      tab.classList.add("text-gray-800");
 
       if (tab.dataset.page === currentPage) {
-        tab.classList.add("bg-green-700","text-white","shadow-md","scale-105");
-        tab.classList.remove("text-green-700");
+        tab.classList.add("bg-gray-800","text-white","shadow-md","scale-105");
+        tab.classList.remove("text-gray-800");
       }
     });
   });
