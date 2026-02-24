@@ -1,7 +1,10 @@
+/* ===============================
+   GENERAL RESET & BASE
+================================ */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
-  color: #1f2937; /* gray-800 */
+  background-color: #F5F1E8; /* sand base */
+  color: #1B2430; /* luxury dark */
   line-height: 1.7;
 }
 
@@ -20,7 +23,7 @@ h1, h2, h3, h4 {
 
 p {
   font-size: 0.95rem;
-  color: #4b5563; /* gray-600 */
+  color: #5B6472; /* softer text */
 }
 
 /* Section title */
@@ -34,7 +37,7 @@ p {
    BUTTONS
 ================================ */
 .btn-primary {
-  background-color: #1f2937; /* gray-800 */
+  background-color: #1B2430; /* luxury dark */
   color: #ffffff;
   padding: 0.75rem 2.5rem;
   border-radius: 9999px;
@@ -43,13 +46,14 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #111827; /* gray-900 */
+  background-color: #111827;
   transform: translateY(-2px);
 }
 
+/* GOLD outline (luxury) */
 .btn-outline {
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid #C2A878;
+  color: #C2A878;
   padding: 0.75rem 2.5rem;
   border-radius: 9999px;
   font-size: 0.85rem;
@@ -57,8 +61,8 @@ p {
 }
 
 .btn-outline:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #C2A878;
+  color: #ffffff;
 }
 
 /* ===============================
@@ -71,7 +75,7 @@ p {
 }
 
 .nav-link:hover {
-  color: #1f2937; /* gray-800 */
+  color: #C2A878; /* accent hover */
 }
 
 /* ===============================
@@ -79,8 +83,8 @@ p {
 ================================ */
 .hero-overlay {
   background: linear-gradient(
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.55)
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
   );
 }
 
@@ -92,7 +96,7 @@ p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 0.95rem;
-  color: #e5e7eb;
+  color: #F3F4F6;
 }
 
 /* ===============================
@@ -102,13 +106,13 @@ p {
   background-color: #ffffff;
   border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.07);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
 }
 
 .card img {
@@ -134,12 +138,19 @@ p {
   padding: 6rem 1.5rem;
 }
 
+/* ALT SECTION (soft blue)
+👉 pakai class ini di HTML section tertentu
+*/
+.section-alt {
+  background-color: #EDF4F7;
+}
+
 /* ===============================
    FOOTER
 ================================ */
 footer {
   font-size: 0.75rem;
-  color: #9ca3af;
+  color: #ffffff;
 }
 
 /* ===============================
@@ -149,7 +160,7 @@ footer {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  background-color: #22c55e;
+  background-color: #25D366;
   color: #ffffff;
   padding: 0.9rem 1.1rem;
   border-radius: 9999px;
