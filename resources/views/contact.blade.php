@@ -31,11 +31,11 @@
 <header class="sticky top-0 z-50 bg-[#F4EFE6]/90 backdrop-blur-md shadow-sm">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 relative">
       <h1 class="text-xl font-medium tracking-widest font-serif-luxury text-[#0B2530]">
-        <a href="/home">Lounusa Beach Resort</a>
+        <a href="/">Lounusa Beach Resort</a>
       </h1>
       
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-        <a href="/home" class="hover:text-[#C2A878] transition">Home</a>
+        <a href="/" class="hover:text-[#C2A878] transition">Home</a>
         <a href="/profil" class="hover:text-[#C2A878] transition">About Us</a>
         <a href="/kamar-laut" class="hover:text-[#C2A878] transition">Rooms</a>
         <a href="/fasilitas" class="hover:text-[#C2A878] transition">Facilities</a>
@@ -64,7 +64,7 @@
       </div>
 
       <div id="contact-mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#0B2530]/95 backdrop-blur-md border-b border-gray-800 shadow-xl py-4 px-8 flex flex-col space-y-4 text-xs tracking-widest uppercase text-white/90 font-light md:hidden transition-all duration-300">
-        <a href="/home" class="hover:text-[#C2A878] py-1 border-b border-gray-800/50">Home</a>
+        <a href="/" class="hover:text-[#C2A878] py-1 border-b border-gray-800/50">Home</a>
         <a href="/profil" class="hover:text-[#C2A878] py-1 border-b border-gray-800/50">About Us</a>
         <a href="/kamar-laut" class="hover:text-[#C2A878] py-1 border-b border-gray-800/50">Rooms</a>
         <a href="/fasilitas" class="hover:text-[#C2A878] py-1 border-b border-gray-800/50">Facilities</a>

@@ -21,7 +21,7 @@ Route::post('/login', [AuthController::class, 'processLogin']);
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // 1. Route untuk Halaman Utama (index.php)
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 });
 
