@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "mkdir -p database && touch database/database.sqlite && php artisan migrate --force && php artisan db:seed --force && node_modules/.bin/vite build --manifest-assets-files || true && php artisan serve --host 0.0.0.0 --port $PORT",
+    "startCommand": "touch database/database.sqlite && php artisan migrate --force && php artisan db:seed --force && php artisan serve --host 0.0.0.0 --port $PORT",
     "restartPolicy": "ON_FAILURE"
   }
 }
