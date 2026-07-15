@@ -1,0 +1,225 @@
+/* ===============================
+   GENERAL RESET & BASE
+================================ */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5F1E8; /* sand base */
+  color: #1B2430; /* luxury dark */
+  line-height: 1.7;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===============================
+   TYPOGRAPHY (Luxury Feel)
+================================ */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.03em;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #5B6472; /* softer text */
+}
+
+/* Section title */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn-primary {
+  background-color: #1B2430; /* luxury dark */
+  color: #ffffff;
+  padding: 0.75rem 2.5rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #111827;
+  transform: translateY(-2px);
+}
+
+/* GOLD outline (luxury) */
+.btn-outline {
+  border: 1px solid #C2A878;
+  color: #C2A878;
+  padding: 0.75rem 2.5rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #C2A878;
+  color: #ffffff;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #C2A878; /* accent hover */
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.hero-overlay {
+  background: linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
+  );
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.hero-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #F3F4F6;
+}
+
+/* ===============================
+   CARDS (Rooms, Facilities)
+================================ */
+.card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.card img {
+  object-fit: cover;
+}
+
+/* ===============================
+   GALLERY
+================================ */
+.gallery-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   SECTION SPACING
+================================ */
+.section {
+  padding: 6rem 1.5rem;
+}
+
+/* ALT SECTION (soft blue)
+👉 pakai class ini di HTML section tertentu
+*/
+.section-alt {
+  background-color: #EDF4F7;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+
+/* ===============================
+   WHATSAPP FLOATING BUTTON
+================================ */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #25D366;
+  color: #ffffff;
+  padding: 0.9rem 1.1rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 50;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+/* =================================
+   GLOBAL RESPONSIVE SYSTEM
+================================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+}
+
+/* HP */
+@media (max-width: 768px) {
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section {
+    padding: 3rem 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+}
+
+/* HP kecil */
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+}
